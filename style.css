@@ -43,6 +43,7 @@ header{
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 header nav.mobile{
@@ -69,6 +70,7 @@ header nav.mobile.abrir{
 header nav button{
     align-self: flex-end;
     margin-bottom: 4.5rem;
+    cursor: pointer;
 }
 
 header .mobile a{
@@ -77,6 +79,12 @@ header .mobile a{
     font-size: 1.125rem;
     line-height: 1.5rem;
 }
+
+
+header .desktop{
+    display: none;
+}
+
 
 main{
     max-width: 1110px;
@@ -98,6 +106,12 @@ main{
     color: var(--dark-blue);
     margin-bottom: 1rem;
 }
+
+ .primeira-secao button:hover{
+        background-color: var(--dark-blue);
+        transition: 0.2s;
+        cursor: pointer;
+    }
 
 .primeira-secao p{
     font-size: 0.9375rem;
@@ -224,5 +238,19 @@ main{
         line-height: 1.625rem;
         text-decoration: none;
         color: var(--gunmetal);
+    }
+    header .desktop a:hover{
+        color: var(--vermillion);
+        transition: 0.4s;     
+    }
+
+    .teceira-secao{
+        display: flex;
+        grid-column: 1/4;
+    }
+    .teceira-secao h2:hover{
+        color: var(--vermillion);
+        transition: 0.4s;
+        cursor: pointer;
     }
 }
